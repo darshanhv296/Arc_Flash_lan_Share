@@ -74,12 +74,11 @@ arc-flash-lan-share/
 ```
 
 ---
+## 📦 Where is the APK?
 
-## 📦 APK Location
+The final installable APK is located in:
 
-```text id="apkclean"
-APK_Version/releases/app-release.apk
-```
+releases/app-release.apk
 
 ---
 
@@ -99,11 +98,7 @@ APK_Version/releases/app-release.apk
 
 ---
 
-## 📦 Where is the APK?
 
-The final installable APK is located in:
-
-releases/app-release.apk
 ```
 
 👉 You can directly:
