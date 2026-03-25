@@ -13,60 +13,114 @@ It enables seamless data transfer between devices connected to the same WiFi or 
 ## 📁 Project Structure
 
 ```text
+
+## 📁 Complete Project Structure
+
+```text id="arcfullclean"
 arc-flash-lan-share/
 │
-├── app/                          # Main Android application source code
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/example/filesharing/
-│   │   │   │   ├── MainActivity.kt           # Main UI entry point
-│   │   │   │   ├── FileSharingViewModel.kt  # Handles UI logic (MVVM)
-│   │   │   │   ├── TransferService.kt       # Background file transfer service
-│   │   │   │   ├── ProgressRequestBody.kt   # Tracks upload progress
-│   │   │   │   ├── WifiUtils.kt             # Network utilities (if used)
-│   │   │   │   └── ...other Kotlin files
-│   │   │   │
-│   │   │   ├── res/                         # UI resources and assets
-│   │   │   │   ├── layout/
-│   │   │   │   │   ├── activity_main.xml    # Main screen layout
-│   │   │   │   │   ├── activity_send.xml    # Send screen UI (optional)
-│   │   │   │   │   └── activity_receive.xml # Receive screen UI (optional)
-│   │   │   │   │
-│   │   │   │   ├── drawable/                # Icons and graphics
-│   │   │   │   ├── mipmap-*/                # App launcher icons (all densities)
-│   │   │   │   ├── values/                  # Colors, strings, styles
-│   │   │   │   └── xml/                     # Config XML files
-│   │   │   │
-│   │   │   └── AndroidManifest.xml          # App configuration (permissions, activities)
-│   │   │
-│   │   └── test/                           # Unit tests (optional)
+├── APK_Version/                          # Main Android APK project
 │   │
-│   ├── build.gradle.kts                    # App-level build configuration
-│   └── proguard-rules.pro                  # Code optimization rules (optional)
-│
-├── gradle/                                 # Gradle build system files
-│   └── wrapper/
-│       ├── gradle-wrapper.jar
-│       └── gradle-wrapper.properties
-│
-├── releases/                               # Final APK output directory
-│   └── app-release.apk                     # Installable Android APK file
-│
-├── assets/                                 # Project screenshots and UI previews
-│   ├── home.png                            # Home screen preview
-│   ├── send.png                            # Send screen preview
-│   ├── receive.png                         # Receive screen preview
-│   ├── connect.png                         # Connection screen (optional)
-│   └── transfer.png                        # Transfer progress UI
-│
-├── build.gradle.kts                        # Project-level build configuration
-├── settings.gradle.kts                     # Project settings
-├── gradle.properties                       # Gradle configuration properties
-├── gradlew                                 # Gradle wrapper (Linux/Mac)
-├── gradlew.bat                             # Gradle wrapper (Windows)
-├── .gitignore                              # Files ignored by Git
-├── README.md                               # Project documentation
-└── LICENSE                                 # License file (optional)
+│   ├── app/                              # Android application source code
+│   │   ├── src/
+│   │   │   ├── main/
+│   │   │   │   ├── java/com/example/filesharing/
+│   │   │   │   │   ├── MainActivity.kt           # Main UI controller (entry point)
+│   │   │   │   │   ├── FileSharingViewModel.kt  # Handles UI logic (MVVM)
+│   │   │   │   │   ├── TransferService.kt       # Background file transfer service
+│   │   │   │   │   ├── ProgressRequestBody.kt   # Tracks upload progress
+│   │   │   │   │   └── ...other Kotlin files
+│   │   │   │   │
+│   │   │   │   ├── res/                         # UI resources and design assets
+│   │   │   │   │   ├── drawable/                # Icons, shapes, backgrounds
+│   │   │   │   │   ├── mipmap-anydpi-v26/       # Adaptive launcher icons
+│   │   │   │   │   ├── mipmap-mdpi/             # App icon (medium density)
+│   │   │   │   │   ├── mipmap-hdpi/             # App icon (high density)
+│   │   │   │   │   ├── mipmap-xhdpi/            # App icon (extra high density)
+│   │   │   │   │   ├── mipmap-xxhdpi/           # App icon (very high density)
+│   │   │   │   │   ├── mipmap-xxxhdpi/          # App icon (ultra high density)
+│   │   │   │   │   ├── values/                  # Colors, strings, themes, styles
+│   │   │   │   │   └── xml/                     # Config files (network, file paths)
+│   │   │   │   │
+│   │   │   │   └── AndroidManifest.xml          # App permissions & configuration
+│   │   │   │
+│   │   │   ├── build.gradle.kts                # App-level build configuration
+│   │   │   └── proguard-rules.pro              # Code optimization (optional)
+│   │
+│   ├── gradle/                                 # Gradle build system
+│   │   └── wrapper/
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   │
+│   ├── releases/                               # Final build outputs
+│   │   └── app-release.apk                     # 📦 Installable APK file
+│   │
+│   ├── assets/                                 # 📸 Screenshots for documentation
+│   │   ├── home_screen.png                     # Main dashboard UI
+│   │   ├── qr_connect.png                      # QR connection screen
+│   │   ├── receive_screen.png                  # Receiving UI
+│   │   ├── send_screen_1.png                   # Sending UI (single file)
+│   │   ├── send_screen_2.png                   # Sending UI (multiple files)
+│   │   └── settings_screen.png                 # Settings panel UI
+│   │
+│   ├── build.gradle.kts                        # Project-level build configuration
+│   ├── settings.gradle.kts                     # Project settings
+│   ├── gradle.properties                       # Gradle configuration properties
+│   ├── gradlew                                 # Gradle wrapper (Linux/Mac)
+│   ├── gradlew.bat                             # Gradle wrapper (Windows)
+│   ├── .gitignore                              # Files ignored by Git
+│   ├── README.md                               # Project documentation
+│   └── LICENSE                                 # License file 
+```
+
+---
+
+## 📦 APK Location
+
+```text id="apkclean"
+APK_Version/releases/app-release.apk
+```
+
+---
+
+## 🧠 Structure Summary
+
+* `app/` → Core Android code
+* `res/` → UI design & resources
+* `assets/` → Screenshots for GitHub
+* `releases/` → Final APK
+* `gradle/` → Build system
+
+---
+
+```
+
+```
+
+👉 This is your **final installable Android application**
+
+---
+
+## 🧠 Structure Summary
+
+* `APK_Version/` → Root of your Android project
+* `app/` → Core source code + UI
+* `res/` → UI design (icons, layouts, themes)
+* `assets/` → Screenshots for GitHub display
+* `releases/` → Final APK file
+* `gradle/` → Build system
+
+---
+
+## 💡 Best Practices
+
+* Keep screenshots updated in `assets/`
+* Replace APK after each new build
+* Maintain clean structure for scalability
+* Use meaningful naming for files
+
+---
+
 ```
 
 ---
