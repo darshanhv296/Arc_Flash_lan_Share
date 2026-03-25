@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Outer circle for the icon base -->
+    <path
+        android:fillColor="#6200EE"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2z" />
+    
+    <!-- Stylized 'A' integrated with a lightning/flash theme -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,4L4.5,20h2.1l1.9-4.5h7l1.9,4.5h2.1L12,4z M8.9,13.5L12,6.1l3.1,7.4H8.9z" />
+    
+    <!-- Flash detail inside the A -->
+    <path
+        android:fillColor="#BB86FC"
+        android:pathData="M12,8l-1,4h2l-1,4" />
+</vector>
