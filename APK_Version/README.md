@@ -94,16 +94,6 @@ APK_Version/releases/app-release.apk
 ---
 
 ```
----
-
-## 💡 Best Practices
-
-* Keep screenshots updated in `assets/`
-* Replace APK after each new build
-* Maintain clean structure for scalability
-* Use meaningful naming for files
-
----
 
 ```
 
