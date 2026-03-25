@@ -16,7 +16,7 @@ It enables seamless data transfer between devices connected to the same WiFi or 
 
 ## 📁 Complete Project Structure
 
-```text id="arcfullclean"
+
 arc-flash-lan-share/
 │
 ├── APK_Version/                          # Main Android APK project
